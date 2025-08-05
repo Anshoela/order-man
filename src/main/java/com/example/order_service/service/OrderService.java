@@ -23,9 +23,9 @@ public class OrderService {
 
     @Transactional
     public Orders createOrders(Orders order) {
-        order.setOrderId(UUID.randomUUID());
-        order.setOrderDate(Instant.now());
-        order.setInvoiceFileUrl("http://localhost:8080/uploads/" + order.getOrderId() + ".pdf");
+//        order.setOrderId(UUID.randomUUID());
+//        order.setOrderDate(Instant.now());
+//        order.setInvoiceFileUrl("http://localhost:8080/uploads/" + order.getOrderId() + ".pdf");
         System.out.println("SNS Notification: Order created - " + order.getOrderId());
         return repository.save(order);
     }

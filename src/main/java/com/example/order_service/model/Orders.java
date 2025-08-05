@@ -20,6 +20,6 @@ public class Orders {
     private Double orderAmount;
     private Instant orderDate;
 
-    private String invoiceFileUrl; // Simulate S3 URL
+    private String invoiceFileUrl; 
 }
 
